@@ -1,0 +1,6 @@
+tests\googleTests\GoogleSearchTests.class
+pom_classes\CT\CTAccount.class
+pom_classes\CT\CTCreteAcc.class
+pom_classes\google\GoogleResultPage.class
+pom_classes\google\GoogleSearchPage.class
+tests\CTTests\CTCreateAccTests.class

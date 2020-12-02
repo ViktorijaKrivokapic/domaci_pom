@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CT" thread-count="1">
+
+    <parameter name="Type" value="CHROME"/>
+    <parameter name="ime" value="Aleksandar"/>
+    <parameter name="prezime" value="Stojanovic"/>
+    <parameter name="password" value="Pass123!!"/>
+    <parameter name="allMsg" value="Hvala na registraciji. Molimo proverite email i aktivirajte Vaš nalog."/>
+
+    <test name="CT Create Account - Chrome">
+        <classes>
+            <class name="tests.CTTests.CTCreateAccTests"/>
+        </classes>
+    </test>
+
+</suite>

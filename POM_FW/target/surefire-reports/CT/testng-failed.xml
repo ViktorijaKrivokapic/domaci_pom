@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [CT]">
+  <parameter name="ime" value="Aleksandar"/>
+  <parameter name="prezime" value="Stojanovic"/>
+  <parameter name="password" value="Pass123!!"/>
+  <parameter name="allMsg" value="Hvala na registraciji. Molimo proverite email i aktivirajte Vaš nalog."/>
+  <test thread-count="1" verbose="0" name="CT Create Account(failed)">
+    <classes>
+      <class name="tests.CTTests.CTCreateAccTests">
+        <methods>
+          <include name="createAccountTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.CTTests.CTCreateAccTests -->
+    </classes>
+  </test> <!-- CT Create Account(failed) -->
+  <test thread-count="1" verbose="0" name="CT Create Account with numbers in Name(failed)">
+    <parameter name="ime" value="Aleks4nd4r"/>
+    <classes>
+      <class name="tests.CTTests.CTCreateAccTests">
+        <methods>
+          <include name="createAccountTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.CTTests.CTCreateAccTests -->
+    </classes>
+  </test> <!-- CT Create Account with numbers in Name(failed) -->
+  <test thread-count="1" verbose="0" name="CT Create Account with spaces in Name(failed)">
+    <parameter name="ime" value=" Aleks nd r "/>
+    <classes>
+      <class name="tests.CTTests.CTCreateAccTests">
+        <methods>
+          <include name="createAccountTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.CTTests.CTCreateAccTests -->
+    </classes>
+  </test> <!-- CT Create Account with spaces in Name(failed) -->
+</suite> <!-- Failed suite [CT] -->
